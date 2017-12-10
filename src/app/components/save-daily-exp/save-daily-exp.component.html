@@ -1,0 +1,40 @@
+<div>
+      <form [formGroup]='dailyExpForm' (ngSubmit)='add(dailyExpForm.value)'>
+        <mat-card>
+          <mat-card-content>
+            <mat-form-field *ngIf='!showTxtBox'>
+              <mat-select placeholder="Daily Expenses" formControlName='exp'>
+                <mat-option value='Fuel'>
+                  Fuel
+                </mat-option>
+                <mat-option value='Food'>
+                  Food
+                </mat-option>
+                <mat-option value='Traveling'>
+                  Traveling
+                </mat-option>
+                <mat-option (click)='showTextBox()'>
+                  other
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width" *ngIf='showTxtBox'>
+              <input matInput type="text" placeholder="other" formControlName='exp'>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+              <input matInput type="text" placeholder="Price" formControlName='price'>
+            </mat-form-field>
+
+
+          </mat-card-content>
+          <mat-card-actions>
+            <button  id='saveBtn' color="primary" mat-button [disabled]='!dailyExpForm.valid'>Save</button>
+          </mat-card-actions>
+
+        </mat-card>
+      </form>
+      <!--<button mat-button (click)='toGetData()'>toGetData</button>-->
+    </div>
+

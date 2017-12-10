@@ -1,0 +1,26 @@
+div{
+    display: block;
+}
+mat-card{
+    margin: 0 auto;
+    width: 45%;
+    margin-top: 40px;
+}
+/*input{
+    width: 1000px;
+}*/
+mat-form-field{
+    width: 100%;
+    
+}
+button{
+    float: right;
+    font-weight: bold;
+     background-color: #3F51B5;
+    color: white;
+
+}
+mat-card>.mat-card-actions:last-child {
+    margin-bottom: -16px;
+    padding-bottom: 35px;
+}

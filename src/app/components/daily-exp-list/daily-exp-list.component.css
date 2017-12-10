@@ -1,0 +1,17 @@
+div{
+    display: block;
+}
+mat-card{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.lastCol{
+    font-weight: bold;
+    font-size: 25px;
+}
+#total{
+    letter-spacing: 10px;
+    text-align: center;
+    
+}

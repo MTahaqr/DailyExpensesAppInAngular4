@@ -1,0 +1,20 @@
+b{
+    background-color: lightgrey
+}
+.graph{
+    width: 80%;
+    margin: 0 auto;
+}
+div{
+    display: block;
+}
+mat-card{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.total{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}

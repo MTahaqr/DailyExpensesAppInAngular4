@@ -1,0 +1,5 @@
+<mat-toolbar color="primary">Daily Expense In Angular4
+    <button color="primary" id='btn' mat-raised-button *ngIf='(userAuthSate | async)' (click)='logout()' >Logout</button>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

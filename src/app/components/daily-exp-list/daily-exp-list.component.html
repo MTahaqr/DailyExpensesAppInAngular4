@@ -1,0 +1,35 @@
+<div>
+<mat-card>
+<table class="table">
+  <thead>
+    <tr>
+      <th>S.No</th>
+      <th>Date</th>
+      <th>Day</th>      
+      <th>Category</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let aEL of allExpList; let i= index '>
+      <td>{{i}}</td>
+      <td>{{aEL.Date}}</td>
+      <td>{{aEL.Day}}</td>      
+      <td>{{aEL.exp}}</td>
+      <td>{{aEL.price}}</td>
+    </tr>
+    <tr >
+      <td></td>
+      <td></td>      
+      <td colspan='2' id='total'>
+      <span class='lastCol'  >Total </span>
+      </td>
+      <td>
+        <span class='lastCol'>{{this.dailyExpDataService.totalExp}}</span>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+</mat-card>
+</div>

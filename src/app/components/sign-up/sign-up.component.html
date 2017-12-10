@@ -1,0 +1,28 @@
+<div>
+      <form [formGroup]='signUpForm' (ngSubmit)='signUp(signUpForm.value)'>   
+  <mat-card>
+    <mat-card-title>SignUp</mat-card-title>
+    <mat-card-content>
+     
+        
+          <mat-form-field class="example-full-width">
+            <input matInput type='text'  placeholder="First Name" formControlName='name'>
+          </mat-form-field>
+        
+            <mat-form-field class="example-full-width">
+            <input matInput type='email'  placeholder="Email" formControlName='email'>
+          </mat-form-field>
+        
+            <mat-form-field class="example-full-width">
+              <input matInput type="password"  placeholder="password" formControlName='password'>
+            </mat-form-field>
+            <!--<p ><a routerLink="/SignUp">Don't have an account create one</a></p>-->
+    </mat-card-content>
+    <mat-card-actions>
+      <button color="primary" mat-raised-button [disabled]='!signUpForm.valid'>Sign Up</button>
+    </mat-card-actions>
+    
+  </mat-card>
+      </form>
+  
+</div>
